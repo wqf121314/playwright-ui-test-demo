@@ -1,0 +1,20 @@
+{
+  "name": "playwright-ui-test-demo",
+  "version": "1.0.0",
+  "description": "Playwright UI test Demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "playwright test",
+    "start-default": "cpy --rename=.env env/.env.local . && playwright test --debug",
+    "start-perf": "cpy --rename=.env env/.env.perf . && playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.9",
+    "cpy-cli": "^5.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
